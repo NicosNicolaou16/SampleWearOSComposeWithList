@@ -1,4 +1,4 @@
-package com.nicos.samplewearoscomposewithlist
+package com.nicos.samplewearoscomposewithlist.ui.list_of_button
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class ListOfButtonsModel @Inject constructor() : ViewModel() {
+class ListOfButtonsViewModel @Inject constructor() : ViewModel() {
 
     var dummyDataModelList = MutableStateFlow<MutableList<DummyDataModel>>(mutableListOf())
 
