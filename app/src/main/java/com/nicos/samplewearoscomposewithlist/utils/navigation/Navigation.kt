@@ -7,7 +7,7 @@ import androidx.wear.compose.navigation.rememberSwipeDismissableNavController
 import com.nicos.samplewearoscomposewithlist.ui.button_screen.ButtonScreen
 import com.nicos.samplewearoscomposewithlist.ui.list_of_button.ListOfDummyData
 import com.nicos.samplewearoscomposewithlist.ui.button_screen.TEXT_KEY
-import com.nicos.samplewearoscomposewithlist.utils.Screens
+import com.nicos.samplewearoscomposewithlist.utils.screens.Screens
 
 @Composable
 fun Navigation() {
