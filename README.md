@@ -1,6 +1,7 @@
 # The project is a test project that implements and test JetPack Compose for Wear OS support with API request (dynamic list), Hilt and Room Database
 
 # This Project contains:
+For Wear OS support <br />
 Compose <br />
 Hilt <br />
 Room Database <br />
