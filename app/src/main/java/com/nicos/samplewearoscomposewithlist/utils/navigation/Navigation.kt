@@ -4,9 +4,9 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.wear.compose.navigation.rememberSwipeDismissableNavController
-import com.nicos.samplewearoscomposewithlist.ui.button_screen.ButtonScreen
-import com.nicos.samplewearoscomposewithlist.ui.list_of_button.ListOfDummyData
-import com.nicos.samplewearoscomposewithlist.ui.button_screen.TEXT_KEY
+import com.nicos.samplewearoscomposewithlist.ui.ship_screen.ButtonScreen
+import com.nicos.samplewearoscomposewithlist.ui.list_of_ships.ListOfDummyData
+import com.nicos.samplewearoscomposewithlist.ui.ship_screen.SHIP_ID_KEY
 import com.nicos.samplewearoscomposewithlist.utils.screens.Screens
 
 @Composable
@@ -20,9 +20,9 @@ fun Navigation() {
             ListOfDummyData(navController = navController)
         }
         composable(
-            "${Screens.BUTTON_SCREEN}/{$TEXT_KEY}",
+            "${Screens.BUTTON_SCREEN}/{$SHIP_ID_KEY}",
         ) {
-            ButtonScreen(text = it.arguments?.getString(TEXT_KEY, null)!!)
+            ButtonScreen(id = it.arguments?.getString(SHIP_ID_KEY, null)!!)
         }
     }
 }

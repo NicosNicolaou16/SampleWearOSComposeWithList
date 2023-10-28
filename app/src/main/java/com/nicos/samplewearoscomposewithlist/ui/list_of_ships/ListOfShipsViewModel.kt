@@ -1,6 +1,5 @@
-package com.nicos.samplewearoscomposewithlist.ui.list_of_button
+package com.nicos.samplewearoscomposewithlist.ui.list_of_ships
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.nicos.samplewearoscomposewithlist.data.dummy_data_model.ShipsDataModel
@@ -14,7 +13,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class ListOfButtonsViewModel @Inject constructor() : ViewModel() {
+class ListOfShipsViewModel @Inject constructor() : ViewModel() {
 
     var shipsDataModelList = MutableStateFlow<MutableList<ShipsDataModel>>(mutableListOf())
 

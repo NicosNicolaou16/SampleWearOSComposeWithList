@@ -25,7 +25,16 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isShrinkResources = true
+            isMinifyEnabled = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+        debug {
+            isShrinkResources = true
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -60,7 +69,11 @@ val activityVersion by extra("1.8.0")
 val fragmentVersion by extra("1.6.1")
 val retrofitVersion by extra("2.9.0")
 val okHttpVersion by extra("4.11.0")
-val roomVersion by extra("2.5.2")
+val roomVersion by extra("2.6.0")
+val glideVersion by extra("4.16.0")
+val glideComposeVersion by extra("1.0.0-beta01")
+val materialDesignVersion by extra("1.10.0")
+val multidexVersion by extra("2.0.1")
 
 dependencies {
 
@@ -93,6 +106,14 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
     implementation("com.squareup.retrofit2:converter-gson:$retrofitVersion")
     implementation("com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion")
+    //Glide - load the images
+    implementation("com.github.bumptech.glide:glide:$glideVersion")
+    ksp("com.github.bumptech.glide:compiler:$glideVersion")
+    implementation("com.github.bumptech.glide:compose:$glideComposeVersion")
+    //Materials
+    implementation("com.google.android.material:material:$materialDesignVersion")
+    //Multidex
+    implementation("androidx.multidex:multidex:$multidexVersion")
     //Testing
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
