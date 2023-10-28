@@ -29,8 +29,9 @@ fun ListOfDummyData(
     listOfButtonsViewModel: ListOfButtonsViewModel = hiltViewModel(), navController: NavController,
     modifier: Modifier = Modifier
 ) {
-    listOfButtonsViewModel.createDummyData()
-    val dummyDataModelList = listOfButtonsViewModel.dummyDataModelList.asSharedFlow()
+    listOfButtonsViewModel.requestToGetDataFromRemote()
+    listOfButtonsViewModel.offline()
+    val dummyDataModelList = listOfButtonsViewModel.shipsDataModelList.asSharedFlow()
         .collectAsState(initial = mutableListOf()).value
     Box(contentAlignment = Alignment.Center, modifier = modifier) {
         val listState = rememberScalingLazyListState()

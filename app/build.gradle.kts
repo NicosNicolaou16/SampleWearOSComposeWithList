@@ -56,6 +56,11 @@ val coroutineVersion by extra("1.7.3")
 val composeHiltNavigationVersion by extra("1.1.0-rc01")
 val hiltVersion by extra("2.48.1")
 val hiltCompilerVersion by extra("1.1.0-rc01")
+val activityVersion by extra("1.8.0")
+val fragmentVersion by extra("1.6.1")
+val retrofitVersion by extra("2.9.0")
+val okHttpVersion by extra("4.11.0")
+val roomVersion by extra("2.5.2")
 
 dependencies {
 
@@ -80,6 +85,14 @@ dependencies {
     implementation("com.google.dagger:hilt-android:$hiltVersion")
     ksp("com.google.dagger:hilt-compiler:$hiltVersion")
     ksp("androidx.hilt:hilt-compiler:$hiltCompilerVersion")
+    //Room Database
+    implementation("androidx.room:room-runtime:$roomVersion")
+    ksp("androidx.room:room-compiler:$roomVersion")
+    implementation("androidx.room:room-ktx:$roomVersion")
+    //Retrofit request
+    implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
+    implementation("com.squareup.retrofit2:converter-gson:$retrofitVersion")
+    implementation("com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion")
     //Testing
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
