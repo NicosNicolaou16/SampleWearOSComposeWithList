@@ -1,4 +1,4 @@
-package com.nicos.samplewearoscomposewithlist.data.dummy_data_model
+package com.nicos.samplewearoscomposewithlist.data.ships_data_model
 
 import com.nicos.samplewearoscomposewithlist.data.room_database.ships.ShipsModel
 
