@@ -1,4 +1,7 @@
-# The project is a test project that implements and test JetPack Compose for Wear OS app with API request (dynamic list), Hilt and Room Database
+# The project is a test project that implements and test JetPack Compose for Wear OS app with API request (dynamic list), Hilt and Room Database.
+
+## Similar project in Flutter (Dart Language)
+https://github.com/NicosNicolaou16/SampleWearOSComposeWithList < br/>
 
 # This Project contains:
 For Wear OS support <br />
