@@ -24,7 +24,7 @@ class ListOfShipsViewModel @Inject constructor() : ViewModel() {
         flow {
             val shipsModelList = shipsRepository.fetchShipsData()
             emit(ShipsDataModel.createShipDataModel(shipsModelList))
-        }.flowOn(Dispatchers.Default)
+        }.flowOn(Dispatchers.IO)
             .collect {
                 shipsDataModelList.emit(it)
             }

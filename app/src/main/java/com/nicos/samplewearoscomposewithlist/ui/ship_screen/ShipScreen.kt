@@ -31,7 +31,7 @@ const val SHIP_ID_KEY = "ship_id_key"
 
 @OptIn(ExperimentalGlideComposeApi::class)
 @Composable
-fun ButtonScreen(
+fun ShipScreen(
     id: String,
     shipViewModel: ShipViewModel = hiltViewModel(),
     modifier: Modifier = Modifier
