@@ -22,6 +22,24 @@ Offline <br />
 https://github.com/r-spacex/SpaceX-API (GitHub) <br />
 https://docs.spacexdata.com/?version=latest (Postman) <br />
 
+# Setup in Manifest
+```xml
+
+<manifest>
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application>
+        <!--other code here-->
+
+        <!--Optional - Depend if the Wear OS App need app or note-->
+        <meta-data android:name="com.google.android.wearable.standalone" android:value="true" />
+
+        <!--other code here-->
+    </application>
+</manifest>
+```
+
 Target SDK version: 34 <br />
 Minimum SDK version: 27 <br />
 Kotlin version: 1.9.10 <br />
