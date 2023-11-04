@@ -17,6 +17,9 @@ Gradle Kotlin DSL <br />
 Repository <br />
 Offline <br />
 
+# References/Tutorials Follow
+https://medium.com/flutter-community/flutter-building-wearos-app-fedf0f06d1b4 <br />
+
 # Setup in Manifest
 ```xml
 
