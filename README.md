@@ -19,6 +19,7 @@ Offline <br />
 
 # References/Tutorials Follow/For Manifest Setup
 https://medium.com/flutter-community/flutter-building-wearos-app-fedf0f06d1b4 <br />
+https://developer.android.com/training/wearables/compose <br />
 
 # Setup in Manifest
 ```xml
