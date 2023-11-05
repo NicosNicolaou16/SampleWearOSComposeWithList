@@ -39,5 +39,4 @@ class ListOfShipsViewModel @Inject constructor() : ViewModel() {
                 shipsDataModelList.emit(it)
             }
     }
-
 }
