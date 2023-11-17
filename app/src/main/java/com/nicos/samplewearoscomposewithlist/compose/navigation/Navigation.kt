@@ -1,12 +1,12 @@
-package com.nicos.samplewearoscomposewithlist.utils.navigation
+package com.nicos.samplewearoscomposewithlist.compose.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.wear.compose.navigation.rememberSwipeDismissableNavController
-import com.nicos.samplewearoscomposewithlist.ui.ship_screen.ShipScreen
-import com.nicos.samplewearoscomposewithlist.ui.list_of_ships.ListOfDummyData
-import com.nicos.samplewearoscomposewithlist.ui.ship_screen.SHIP_ID_KEY
+import com.nicos.samplewearoscomposewithlist.compose.ship_screen.ShipScreen
+import com.nicos.samplewearoscomposewithlist.compose.list_of_ships.ListOfDummyData
+import com.nicos.samplewearoscomposewithlist.compose.ship_screen.SHIP_ID_KEY
 import com.nicos.samplewearoscomposewithlist.utils.screens.Screens
 
 @Composable

@@ -1,4 +1,4 @@
-package com.nicos.samplewearoscomposewithlist.application
+package com.nicos.samplewearoscomposewithlist.compose.application
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

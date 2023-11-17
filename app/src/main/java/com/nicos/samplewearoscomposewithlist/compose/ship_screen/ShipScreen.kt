@@ -1,4 +1,4 @@
-package com.nicos.samplewearoscomposewithlist.ui.ship_screen
+package com.nicos.samplewearoscomposewithlist.compose.ship_screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border

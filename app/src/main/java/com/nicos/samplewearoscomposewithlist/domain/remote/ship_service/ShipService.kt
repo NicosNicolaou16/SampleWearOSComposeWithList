@@ -1,4 +1,4 @@
-package com.nicos.samplewearoscomposewithlist.data.remote.ship_service
+package com.nicos.samplewearoscomposewithlist.domain.remote.ship_service
 
 import com.nicos.samplewearoscomposewithlist.data.room_database.ships.ShipsModel
 import retrofit2.http.GET

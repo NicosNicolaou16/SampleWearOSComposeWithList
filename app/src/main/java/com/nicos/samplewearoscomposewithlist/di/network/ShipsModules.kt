@@ -1,6 +1,6 @@
-package com.nicos.samplewearoscomposewithlist.data.remote.network
+package com.nicos.samplewearoscomposewithlist.di.network
 
-import com.nicos.samplewearoscomposewithlist.data.remote.ship_service.ShipService
+import com.nicos.samplewearoscomposewithlist.domain.remote.ship_service.ShipService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

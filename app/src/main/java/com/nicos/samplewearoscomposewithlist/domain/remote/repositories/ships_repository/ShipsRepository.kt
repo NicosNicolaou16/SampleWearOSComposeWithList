@@ -1,8 +1,8 @@
-package com.nicos.samplewearoscomposewithlist.data.remote.repositories.ships_repository
+package com.nicos.samplewearoscomposewithlist.domain.remote.repositories.ships_repository
 
 import com.nicos.samplewearoscomposewithlist.data.room_database.init_database.MyRoomDatabase
 import com.nicos.samplewearoscomposewithlist.data.room_database.ships.ShipsModel
-import com.nicos.samplewearoscomposewithlist.data.remote.ship_service.ShipService
+import com.nicos.samplewearoscomposewithlist.domain.remote.ship_service.ShipService
 import kotlinx.coroutines.flow.collect
 import javax.inject.Inject
 

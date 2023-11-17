@@ -1,4 +1,4 @@
-package com.nicos.samplewearoscomposewithlist.ui.list_of_ships
+package com.nicos.samplewearoscomposewithlist.compose.list_of_ships
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -41,7 +41,9 @@ fun ListOfDummyData(
             autoCentering = AutoCenteringParams(itemIndex = 0),
             state = listState
         ) {
-            items(shipsDataModelsList) { shipsDataModel ->
+            items(
+                shipsDataModelsList,
+                key = { shipsDataModel -> shipsDataModel.shipsModel.ship_id }) { shipsDataModel ->
                 TextItem(
                     modifier = modifier,
                     shipsModel = shipsDataModel.shipsModel

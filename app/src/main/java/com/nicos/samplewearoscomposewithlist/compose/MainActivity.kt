@@ -1,4 +1,4 @@
-package com.nicos.samplewearoscomposewithlist
+package com.nicos.samplewearoscomposewithlist.compose
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,7 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.nicos.samplewearoscomposewithlist.utils.navigation.Navigation
+import com.nicos.samplewearoscomposewithlist.compose.navigation.Navigation
 import com.nicos.samplewearoscomposewithlist.ui.theme.SampleWearOSComposeWithListTheme
 import dagger.hilt.android.AndroidEntryPoint
 
