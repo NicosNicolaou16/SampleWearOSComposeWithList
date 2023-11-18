@@ -31,7 +31,7 @@ https://developer.android.com/training/wearables/compose <br />
     <application>
         <!--other code here-->
 
-        <!--Optional - Depend if the Wear OS App need app or note-->
+        <!--Optional-->
         <meta-data android:name="com.google.android.wearable.standalone" android:value="true" />
 
         <!--other code here-->
