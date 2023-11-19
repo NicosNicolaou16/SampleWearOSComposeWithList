@@ -15,6 +15,7 @@ Support kapt and ksp (ksp only setup for Room Database) <br />
 minifyEnabled, shrinkResources, R8 are enabled <br />
 Gradle Kotlin DSL <br />
 Repository <br />
+KSP <br />
 Offline <br />
 
 # References/Tutorials Follow/For Manifest Setup
