@@ -43,6 +43,9 @@ https://developer.android.com/training/wearables/compose <br />
 </manifest>
 ```
 
+## Check my article
+https://medium.com/@nicosnicolaou/standalone-wear-os-application-jetpack-compose-and-flutter-5a37f4775ed8
+
 # Feeds/Urls/End Point (parsing some data from response)
 ## (Links References for Ends Points)
 https://github.com/r-spacex/SpaceX-API (GitHub) <br />
