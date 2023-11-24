@@ -2,7 +2,7 @@ package com.nicos.samplewearoscomposewithlist.compose.ship_screen
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.nicos.samplewearoscomposewithlist.domain.remote.repositories.ship_repository.ShipRepository
+import com.nicos.samplewearoscomposewithlist.data.repositories.ship_repository.ShipRepository
 import com.nicos.samplewearoscomposewithlist.data.room_database.ships.ShipsModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers

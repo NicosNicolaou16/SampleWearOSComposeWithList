@@ -1,4 +1,4 @@
-package com.nicos.samplewearoscomposewithlist.domain.remote.repositories.ship_repository
+package com.nicos.samplewearoscomposewithlist.data.repositories.ship_repository
 
 import com.nicos.samplewearoscomposewithlist.data.room_database.init_database.MyRoomDatabase
 import com.nicos.samplewearoscomposewithlist.data.room_database.ships.ShipsModel
