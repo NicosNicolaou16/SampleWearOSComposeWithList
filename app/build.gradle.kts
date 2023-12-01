@@ -52,7 +52,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.4"
+        kotlinCompilerExtensionVersion = "1.5.5"
     }
     packaging {
         resources {
@@ -69,7 +69,7 @@ val activityVersion by extra("1.8.0")
 val fragmentVersion by extra("1.6.2")
 val retrofitVersion by extra("2.9.0")
 val okHttpVersion by extra("4.11.0")
-val roomVersion by extra("2.6.0")
+val roomVersion by extra("2.6.1")
 val glideVersion by extra("4.16.0")
 val glideComposeVersion by extra("1.0.0-beta01")
 val materialDesignVersion by extra("1.10.0")
