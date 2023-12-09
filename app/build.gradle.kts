@@ -52,7 +52,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.5"
+        kotlinCompilerExtensionVersion = "1.5.6"
     }
     packaging {
         resources {
@@ -63,7 +63,7 @@ android {
 
 val coroutineVersion by extra("1.7.3")
 val composeHiltNavigationVersion by extra("1.1.0")
-val hiltVersion by extra("2.48.1")
+val hiltVersion by extra("2.49")
 val hiltCompilerVersion by extra("1.1.0")
 val activityVersion by extra("1.8.0")
 val fragmentVersion by extra("1.6.2")
