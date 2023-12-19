@@ -52,7 +52,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.6"
+        kotlinCompilerExtensionVersion = "1.5.7"
     }
     packaging {
         resources {
@@ -75,7 +75,7 @@ val glideComposeVersion by extra("1.0.0-beta01")
 val materialDesignVersion by extra("1.11.0")
 val multidexVersion by extra("2.0.1")
 val wearComposeVersion by extra("1.2.1")
-val activityComposeVersion by extra("1.8.1")
+val activityComposeVersion by extra("1.8.2")
 
 dependencies {
 
