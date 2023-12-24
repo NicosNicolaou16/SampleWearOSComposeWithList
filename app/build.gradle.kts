@@ -63,7 +63,7 @@ android {
 
 val coroutineVersion by extra("1.7.3")
 val composeHiltNavigationVersion by extra("1.1.0")
-val hiltVersion by extra("2.49")
+val hiltVersion by extra("2.50")
 val hiltCompilerVersion by extra("1.1.0")
 val activityVersion by extra("1.8.2")
 val fragmentVersion by extra("1.6.2")
