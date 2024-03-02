@@ -19,7 +19,7 @@ data class PositionModel(
         suspend fun insertThePosition(positionModel: PositionModel, myRoomDatabase: MyRoomDatabase) =
             flow {
                 myRoomDatabase.positionDao().insertOrReplaceObject(positionModel)
-                emit(myRoomDatabase.positionDao().getPosition())
+                emit(positionModel)
             }
         }
 }

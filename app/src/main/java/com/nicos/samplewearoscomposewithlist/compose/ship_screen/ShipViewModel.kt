@@ -18,7 +18,7 @@ class ShipViewModel @Inject constructor() : ViewModel() {
     val ship = MutableStateFlow<ShipsModel>(ShipsModel())
 
     @Inject
-    protected lateinit var shipDetailsRepository: ShipRepository
+    internal lateinit var shipDetailsRepository: ShipRepository
 
     fun queryShipById(id: String) = viewModelScope.launch {
         flow {

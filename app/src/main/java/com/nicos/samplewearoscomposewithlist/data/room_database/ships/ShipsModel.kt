@@ -66,12 +66,12 @@ data class ShipsModel(
             }
 
         /**
-         * inset position object - one to one
+         * insert position object - one to one
          * */
         private suspend fun savePosition(ship: ShipsModel, myRoomDatabase: MyRoomDatabase) {
             PositionModel.insertThePosition(ship.position, myRoomDatabase).collect {
                 ship.positionId =
-                    it.position_id //get the position_id from PositionModel and assign to positionId (ShipModel)
+                    it.position_id
             }
         }
     }
