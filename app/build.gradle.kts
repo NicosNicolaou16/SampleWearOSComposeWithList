@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp")
     id("dagger.hilt.android.plugin")
+    id("org.jetbrains.kotlin.plugin.compose") version "2.0.0"
 }
 
 android {
@@ -51,8 +52,9 @@ android {
     buildFeatures {
         compose = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.13"
+    composeCompiler {
+        enableStrongSkippingMode = true
+        reportsDestination = layout.buildDirectory.dir("compose_compiler")
     }
     packaging {
         resources {
@@ -61,7 +63,7 @@ android {
     }
 }
 
-val coroutineVersion by extra("1.8.0")
+val coroutineVersion by extra("1.8.1")
 val composeHiltNavigationVersion by extra("1.2.0")
 val hiltVersion by extra("2.51.1")
 val hiltCompilerVersion by extra("1.2.0")
@@ -80,7 +82,7 @@ val activityComposeVersion by extra("1.9.0")
 dependencies {
 
     implementation("androidx.core:core-ktx:1.13.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.1")
     //Compose
     implementation("androidx.activity:activity-compose:$activityComposeVersion")
     implementation(platform("androidx.compose:compose-bom:2024.05.00"))
