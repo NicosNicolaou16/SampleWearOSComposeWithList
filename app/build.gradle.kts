@@ -62,7 +62,7 @@ android {
     }
 }
 
-val coroutineVersion by extra("1.8.1")
+val coroutineVersion by extra("1.9.0")
 val composeHiltNavigationVersion by extra("1.2.0")
 val hiltVersion by extra("2.52")
 val hiltCompilerVersion by extra("1.2.0")
@@ -75,16 +75,16 @@ val glideVersion by extra("4.16.0")
 val glideComposeVersion by extra("1.0.0-beta01")
 val materialDesignVersion by extra("1.12.0")
 val multidexVersion by extra("2.0.1")
-val wearComposeVersion by extra("1.3.1")
-val activityComposeVersion by extra("1.9.1")
+val wearComposeVersion by extra("1.4.0")
+val activityComposeVersion by extra("1.9.2")
 
 dependencies {
 
     implementation("androidx.core:core-ktx:1.13.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.6")
     //Compose
     implementation("androidx.activity:activity-compose:$activityComposeVersion")
-    implementation(platform("androidx.compose:compose-bom:2024.08.00"))
+    implementation(platform("androidx.compose:compose-bom:2024.09.02"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
@@ -121,7 +121,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
-    androidTestImplementation(platform("androidx.compose:compose-bom:2024.08.00"))
+    androidTestImplementation(platform("androidx.compose:compose-bom:2024.09.02"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
