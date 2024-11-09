@@ -8,8 +8,8 @@ plugins {
 
 android {
     namespace = "com.nicos.samplewearoscomposewithlist"
-    compileSdk = 34
-    buildToolsVersion = "34.0.0"
+    compileSdk = 35
+    buildToolsVersion = "35.0.0"
 
     defaultConfig {
         applicationId = "com.nicos.samplewearoscomposewithlist"
@@ -76,15 +76,15 @@ val glideComposeVersion by extra("1.0.0-beta01")
 val materialDesignVersion by extra("1.12.0")
 val multidexVersion by extra("2.0.1")
 val wearComposeVersion by extra("1.4.0")
-val activityComposeVersion by extra("1.9.2")
+val activityComposeVersion by extra("1.9.3")
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.13.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.6")
+    implementation("androidx.core:core-ktx:1.15.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
     //Compose
     implementation("androidx.activity:activity-compose:$activityComposeVersion")
-    implementation(platform("androidx.compose:compose-bom:2024.09.02"))
+    implementation(platform("androidx.compose:compose-bom:2024.10.01"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
@@ -121,7 +121,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
-    androidTestImplementation(platform("androidx.compose:compose-bom:2024.09.02"))
+    androidTestImplementation(platform("androidx.compose:compose-bom:2024.10.01"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
