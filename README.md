@@ -22,12 +22,9 @@ Repository <br />
 KSP <br />
 Offline <br />
 
-# References/Tutorials Follow/For Manifest Setup
+# Setup
 
-https://medium.com/flutter-community/flutter-building-wearos-app-fedf0f06d1b4 <br />
-https://developer.android.com/training/wearables/compose <br />
-
-# Setup in Manifest
+## Setup in Manifest
 
 ```xml
 
@@ -65,3 +62,8 @@ Gradle version: 8.7.2 <br />
 
 https://github.com/r-spacex/SpaceX-API (GitHub) <br />
 https://docs.spacexdata.com/?version=latest (Postman) <br />
+
+# References
+
+https://medium.com/flutter-community/flutter-building-wearos-app-fedf0f06d1b4 <br />
+https://developer.android.com/training/wearables/compose <br />
