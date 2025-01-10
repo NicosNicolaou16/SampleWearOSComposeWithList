@@ -6,10 +6,6 @@ requests (dynamic list), Hilt for dependency injection, and Room Database. <br /
 <a title="simulator_image"><img src="Screenshot_20231119_123938.png" height="200" width="200"></a>
 <a title="simulator_image"><img src="Screenshot_20231119_124233.png" height="200" width="200"></a>
 
-## Similar project with (Dart Language)
-
-https://github.com/NicosNicolaou16/SampleWearOSWithList <br />
-
 # This Project contains:
 
 For Wear OS support <br />
