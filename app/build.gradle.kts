@@ -3,7 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp")
     id("dagger.hilt.android.plugin")
-    id("org.jetbrains.kotlin.plugin.compose") version "2.0.21"
+    id("org.jetbrains.kotlin.plugin.compose") version "2.1.0"
 }
 
 android {
@@ -62,9 +62,9 @@ android {
     }
 }
 
-val coroutineVersion by extra("1.9.0")
+val coroutineVersion by extra("1.10.1")
 val composeHiltNavigationVersion by extra("1.2.0")
-val hiltVersion by extra("2.52")
+val hiltVersion by extra("2.55")
 val hiltCompilerVersion by extra("1.2.0")
 val activityVersion by extra("1.8.2")
 val fragmentVersion by extra("1.6.2")
@@ -84,7 +84,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
     //Compose
     implementation("androidx.activity:activity-compose:$activityComposeVersion")
-    implementation(platform("androidx.compose:compose-bom:2024.10.01"))
+    implementation(platform("androidx.compose:compose-bom:2024.12.01"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
@@ -121,7 +121,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
-    androidTestImplementation(platform("androidx.compose:compose-bom:2024.10.01"))
+    androidTestImplementation(platform("androidx.compose:compose-bom:2024.12.01"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
