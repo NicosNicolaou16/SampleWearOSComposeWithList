@@ -32,6 +32,10 @@ offline functionality.  <br />
 [KSP](https://developer.android.com/build/migrate-to-ksp) ("Kotlin Symbol Processing") is a tool for
 efficient annotation processing in Kotlin, providing faster code generation and symbol manipulation
 compared to KAPT. [Repository](https://github.com/google/ksp) <br />
+[Glide](https://bumptech.github.io/glide/) is an Android library for efficiently loading and
+displaying images. It handles image caching,
+transformations, and supports animations during image
+loading. [Documentation Compose](https://bumptech.github.io/glide/int/compose.html), [Repository](https://github.com/bumptech/glide)
 [Hilt Dependencies Injection](https://developer.android.com/training/dependency-injection/hilt-android)
 is an Android library that simplifies dependency injection by using annotations to automatically
 manage and provide dependencies across components, built on top of
