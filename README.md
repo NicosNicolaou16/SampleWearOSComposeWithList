@@ -52,14 +52,16 @@ https://developer.android.com/training/wearables/compose <br />
 > [!IMPORTANT]
 > Similar project with (Dart Language) :point_right: [SampleWearOSWithList](https://github.com/NicosNicolaou16/SampleWearOSWithList) :point_left: <br />
 
+# Versioning
+
+Target SDK version: 35 <br />
+Minimum SDK version: 28 <br />
+Kotlin version: 2.0.21 <br />
+Gradle version: 8.7.2 <br />
+
 # Feeds/Urls/End Point (parsing some data from response)
 
 ## (Links References for Ends Points)
 
 https://github.com/r-spacex/SpaceX-API (GitHub) <br />
 https://docs.spacexdata.com/?version=latest (Postman) <br />
-
-Target SDK version: 35 <br />
-Minimum SDK version: 28 <br />
-Kotlin version: 2.0.21 <br />
-Gradle version: 8.7.2 <br />
