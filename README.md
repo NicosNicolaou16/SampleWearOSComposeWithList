@@ -4,9 +4,11 @@
 <a title="simulator_image"><img src="Screenshot_20231119_124233.png" height="200" width="200"></a>
 
 ## Similar project with (Dart Language)
+
 https://github.com/NicosNicolaou16/SampleWearOSWithList <br />
 
 # This Project contains:
+
 For Wear OS support <br />
 Compose <br />
 Hilt <br />
@@ -22,10 +24,12 @@ KSP <br />
 Offline <br />
 
 # References/Tutorials Follow/For Manifest Setup
+
 https://medium.com/flutter-community/flutter-building-wearos-app-fedf0f06d1b4 <br />
 https://developer.android.com/training/wearables/compose <br />
 
 # Setup in Manifest
+
 ```xml
 
 <manifest>
@@ -44,10 +48,13 @@ https://developer.android.com/training/wearables/compose <br />
 ```
 
 ## Check my article
+
 https://medium.com/@nicosnicolaou/standalone-wear-os-application-jetpack-compose-and-flutter-5a37f4775ed8
 
 # Feeds/Urls/End Point (parsing some data from response)
+
 ## (Links References for Ends Points)
+
 https://github.com/r-spacex/SpaceX-API (GitHub) <br />
 https://docs.spacexdata.com/?version=latest (Postman) <br />
 
