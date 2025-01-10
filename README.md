@@ -6,10 +6,13 @@ requests (dynamic list), Hilt for dependency injection, and Room Database. <br /
 <a title="simulator_image"><img src="Screenshot_20231119_123938.png" height="200" width="200"></a>
 <a title="simulator_image"><img src="Screenshot_20231119_124233.png" height="200" width="200"></a>
 
-# This Project contains:
+# The Project Contain the following technologies
 
-For Wear OS support <br />
-Compose <br />
+[Wear OS](https://developer.android.com/training/wearables) support refers to adapting an app for
+use on smartwatches, ensuring it works well with small
+screens, conserves battery life, and utilizes features such as notifications and fitness tracking
+specific to wearable devices. <br />
+The UI is build using [Jetpack Compose](https://developer.android.com/develop/ui/compose). <br />
 Hilt <br />
 Room Database <br />
 Coroutines <br />
