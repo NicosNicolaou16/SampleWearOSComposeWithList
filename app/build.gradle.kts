@@ -9,7 +9,7 @@ plugins {
 android {
     namespace = "com.nicos.samplewearoscomposewithlist"
     compileSdk = 35
-    buildToolsVersion = "35.0.0"
+    buildToolsVersion = "35.0.1"
 
     defaultConfig {
         applicationId = "com.nicos.samplewearoscomposewithlist"
@@ -62,29 +62,29 @@ android {
     }
 }
 
-val coroutineVersion by extra("1.10.1")
+val coroutineVersion by extra("1.10.2")
 val composeHiltNavigationVersion by extra("1.2.0")
-val hiltVersion by extra("2.55")
+val hiltVersion by extra("2.56.2")
 val hiltCompilerVersion by extra("1.2.0")
 val activityVersion by extra("1.8.2")
 val fragmentVersion by extra("1.6.2")
-val retrofitVersion by extra("2.11.0")
+val retrofitVersion by extra("3.0.0")
 val okHttpVersion by extra("4.11.0")
-val roomVersion by extra("2.6.1")
+val roomVersion by extra("2.7.1")
 val glideVersion by extra("4.16.0")
 val glideComposeVersion by extra("1.0.0-beta01")
 val materialDesignVersion by extra("1.12.0")
 val multidexVersion by extra("2.0.1")
-val wearComposeVersion by extra("1.4.0")
-val activityComposeVersion by extra("1.9.3")
+val wearComposeVersion by extra("1.4.1")
+val activityComposeVersion by extra("1.10.1")
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.15.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
+    implementation("androidx.core:core-ktx:1.16.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.1")
     //Compose
     implementation("androidx.activity:activity-compose:$activityComposeVersion")
-    implementation(platform("androidx.compose:compose-bom:2024.12.01"))
+    implementation(platform("androidx.compose:compose-bom:2025.06.00"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
@@ -121,7 +121,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
-    androidTestImplementation(platform("androidx.compose:compose-bom:2024.12.01"))
+    androidTestImplementation(platform("androidx.compose:compose-bom:2025.06.00"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
