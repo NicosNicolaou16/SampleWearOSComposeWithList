@@ -64,13 +64,10 @@ android {
 
 val coroutineVersion by extra("1.10.2")
 val composeHiltNavigationVersion by extra("1.2.0")
-val hiltVersion by extra("2.56.2")
+val hiltVersion by extra("2.57")
 val hiltCompilerVersion by extra("1.2.0")
-val activityVersion by extra("1.8.2")
-val fragmentVersion by extra("1.6.2")
 val retrofitVersion by extra("3.0.0")
-val okHttpVersion by extra("4.11.0")
-val roomVersion by extra("2.7.1")
+val roomVersion by extra("2.7.2")
 val glideVersion by extra("4.16.0")
 val glideComposeVersion by extra("1.0.0-beta01")
 val materialDesignVersion by extra("1.12.0")
@@ -80,11 +77,11 @@ val activityComposeVersion by extra("1.10.1")
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.16.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.1")
+    implementation("androidx.core:core-ktx:1.17.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.2")
     //Compose
     implementation("androidx.activity:activity-compose:$activityComposeVersion")
-    implementation(platform("androidx.compose:compose-bom:2025.06.00"))
+    implementation(platform("androidx.compose:compose-bom:2025.08.00"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
@@ -119,9 +116,9 @@ dependencies {
     implementation("androidx.multidex:multidex:$multidexVersion")
     //Testing
     testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.2.1")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
-    androidTestImplementation(platform("androidx.compose:compose-bom:2025.06.00"))
+    androidTestImplementation("androidx.test.ext:junit:1.3.0")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")
+    androidTestImplementation(platform("androidx.compose:compose-bom:2025.08.00"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
