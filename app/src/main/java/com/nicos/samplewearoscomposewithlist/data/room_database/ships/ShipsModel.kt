@@ -74,5 +74,14 @@ data class ShipsModel(
                     it.position_id
             }
         }
+
+        suspend fun getShipById(id: String, myRoomDatabase: MyRoomDatabase): ShipsModel? {
+            val ship = myRoomDatabase.shipDao().getShipById(id)
+            val position = myRoomDatabase.positionDao().getPositionById(ship?.positionId ?: -1)
+            if (position != null) {
+                ship?.position = position
+            }
+            return ship
+        }
     }
 }

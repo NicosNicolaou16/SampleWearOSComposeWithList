@@ -9,6 +9,6 @@ class ShipRepository  @Inject constructor(
 ) {
 
     suspend fun queryShipById(id: String): ShipsModel? {
-        return myRoomDatabase.shipDao().getShipById(id)
+        return ShipsModel.getShipById(id, myRoomDatabase)
     }
 }

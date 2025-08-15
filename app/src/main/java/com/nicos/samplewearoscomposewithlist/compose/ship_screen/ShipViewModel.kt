@@ -7,6 +7,7 @@ import com.nicos.samplewearoscomposewithlist.data.room_database.ships.ShipsModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.launch
@@ -25,10 +26,9 @@ class ShipViewModel @Inject constructor() : ViewModel() {
             val shipsModel: ShipsModel? = shipDetailsRepository.queryShipById(id)
             emit(shipsModel)
         }.flowOn(Dispatchers.Default)
+            .filterNotNull()
             .collect {
-                if (it != null) {
                     ship.value = it
-                }
             }
     }
 }
