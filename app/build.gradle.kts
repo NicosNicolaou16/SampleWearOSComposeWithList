@@ -8,13 +8,13 @@ plugins {
 
 android {
     namespace = "com.nicos.samplewearoscomposewithlist"
-    compileSdk = 35
-    buildToolsVersion = "35.0.1"
+    compileSdk = 36
+    buildToolsVersion = "36.0.0"
 
     defaultConfig {
         applicationId = "com.nicos.samplewearoscomposewithlist"
-        minSdk = 28
-        targetSdk = 35
+        minSdk = 29
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
