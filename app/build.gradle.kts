@@ -84,7 +84,7 @@ dependencies {
 
     implementation("androidx.core:core-ktx:1.17.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.10.0")
-    //Compose
+    // Compose
     implementation("androidx.activity:activity-compose:$activityComposeVersion")
     implementation(platform("androidx.compose:compose-bom:2025.12.01"))
     implementation("androidx.compose.ui:ui")
@@ -96,30 +96,30 @@ dependencies {
     implementation("androidx.wear.compose:compose-ui-tooling:$wearComposeVersion")
     implementation("androidx.wear.compose:compose-navigation:$wearComposeVersion")
     implementation("androidx.hilt:hilt-navigation-compose:$composeHiltNavigationVersion")
-    //Coroutines
+    // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutineVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion")
-    //Hilt
+    // Hilt
     implementation("com.google.dagger:hilt-android:$hiltVersion")
     ksp("com.google.dagger:hilt-compiler:$hiltVersion")
     ksp("androidx.hilt:hilt-compiler:$hiltCompilerVersion")
-    //Room Database
+    // Room Database
     implementation("androidx.room:room-runtime:$roomVersion")
     ksp("androidx.room:room-compiler:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion")
-    //Retrofit request
+    // Retrofit request
     implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
     implementation("com.squareup.retrofit2:converter-gson:$retrofitVersion")
     implementation("com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion")
-    //Glide - load the images
+    // Glide - load the images
     implementation("com.github.bumptech.glide:glide:$glideVersion")
     ksp("com.github.bumptech.glide:compiler:$glideVersion")
     implementation("com.github.bumptech.glide:compose:$glideComposeVersion")
-    //Materials
+    // Materials
     implementation("com.google.android.material:material:$materialDesignVersion")
-    //Multidex
+    // Multidex
     implementation("androidx.multidex:multidex:$multidexVersion")
-    //Testing
+    // Testing
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.3.0")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")
