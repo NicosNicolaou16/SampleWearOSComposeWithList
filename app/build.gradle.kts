@@ -78,7 +78,7 @@ val glideComposeVersion by extra("1.0.0-beta01")
 val materialDesignVersion by extra("1.12.0")
 val multidexVersion by extra("2.0.1")
 val wearComposeVersion by extra("1.4.1")
-val activityComposeVersion by extra("1.10.1")
+val activityComposeVersion by extra("1.12.2")
 
 dependencies {
 
@@ -86,7 +86,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.2")
     //Compose
     implementation("androidx.activity:activity-compose:$activityComposeVersion")
-    implementation(platform("androidx.compose:compose-bom:2025.08.00"))
+    implementation(platform("androidx.compose:compose-bom:2025.12.01"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
@@ -123,7 +123,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.3.0")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")
-    androidTestImplementation(platform("androidx.compose:compose-bom:2025.08.00"))
+    androidTestImplementation(platform("androidx.compose:compose-bom:2025.12.01"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
