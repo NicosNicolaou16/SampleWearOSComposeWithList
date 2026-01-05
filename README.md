@@ -79,17 +79,17 @@ also obfuscating the remaining code to improve security. <br />
 
 Target SDK version: 36 <br />
 Minimum SDK version: 29 <br />
-Kotlin version: 2.2.10 <br />
-Gradle version: 8.12.0 <br />
+Kotlin version: 2.3.0 <br />
+Gradle version: 8.13.2 <br />
 
 # Feeds/Urls/End Point (parsing some data from response)
 
 ## (Links References for Ends Points)
 
-https://github.com/r-spacex/SpaceX-API (GitHub) <br />
-https://docs.spacexdata.com/?version=latest (Postman) <br />
+- https://github.com/r-spacex/SpaceX-API (GitHub) <br />
+- https://docs.spacexdata.com/?version=latest (Postman) <br />
 
 # References
 
-https://medium.com/flutter-community/flutter-building-wearos-app-fedf0f06d1b4 <br />
-https://developer.android.com/training/wearables/compose <br />
+- https://medium.com/flutter-community/flutter-building-wearos-app-fedf0f06d1b4 <br />
+- https://developer.android.com/training/wearables/compose <br />
