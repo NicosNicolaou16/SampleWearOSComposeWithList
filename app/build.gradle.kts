@@ -98,7 +98,7 @@ dependencies {
     implementation("androidx.wear.compose:compose-material:$wearComposeVersion")
     implementation("androidx.wear.compose:compose-foundation:$wearComposeVersion")
     implementation("androidx.wear.compose:compose-ui-tooling:$wearComposeVersion")
-    implementation("androidx.wear.compose:compose-navigation:$wearComposeVersion")
+    //implementation("androidx.wear.compose:compose-navigation:$wearComposeVersion")
     implementation("androidx.hilt:hilt-navigation-compose:$composeHiltNavigationVersion")
     // Navigation 3
     implementation("androidx.navigation3:navigation3-runtime:${navigation3Version}")
