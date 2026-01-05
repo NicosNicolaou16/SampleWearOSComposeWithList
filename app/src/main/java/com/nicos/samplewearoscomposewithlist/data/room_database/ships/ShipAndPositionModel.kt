@@ -8,11 +8,10 @@ import androidx.room.Relation
  * */
 data class ShipAndPositionModel(
     @Embedded
-        var positionModel: PositionModel,
+    var positionModel: PositionModel,
     @Relation(
-                parentColumn = "position_id",
-                entityColumn = "positionId"
-        )
-        var shipsModel: ShipsModel
-) {
-}
+        parentColumn = "position_id",
+        entityColumn = "positionId"
+    )
+    var shipsModel: ShipsModel
+)
