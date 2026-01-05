@@ -15,19 +15,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.navigation.NavController
+import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.wear.compose.foundation.lazy.AutoCenteringParams
 import androidx.wear.compose.foundation.lazy.ScalingLazyColumn
 import androidx.wear.compose.foundation.lazy.items
 import androidx.wear.compose.foundation.lazy.rememberScalingLazyListState
+import com.nicos.samplewearoscomposewithlist.compose.navigation.navigation_3.Navigator
 import com.nicos.samplewearoscomposewithlist.data.room_database.ships.ShipsModel
-import com.nicos.samplewearoscomposewithlist.utils.screens.Screens
+import com.nicos.samplewearoscomposewithlist.compose.navigation.screens.ShipScreen
 import kotlinx.coroutines.flow.asSharedFlow
 
 @Composable
-fun ListOfDummyData(
-    listOfShipsViewModel: ListOfShipsViewModel = hiltViewModel(), navController: NavController,
+fun ListOfShipsScreen(
+    navigator: Navigator,
+    listOfShipsViewModel: ListOfShipsViewModel = hiltViewModel(),
     modifier: Modifier = Modifier
 ) {
     listOfShipsViewModel.requestToGetDataFromRemote()
@@ -48,7 +49,11 @@ fun ListOfDummyData(
                     modifier = modifier,
                     shipsModel = shipsDataModel.shipsModel
                 ) { shipsModel ->
-                    navController.navigate(Screens.BUTTON_SCREEN + "/${shipsModel.ship_id}")
+                    navigator.navigate(
+                        ShipScreen(
+                            id = shipsModel.ship_id
+                        )
+                    )
                 }
             }
         }

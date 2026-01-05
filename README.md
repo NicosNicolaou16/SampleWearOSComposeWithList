@@ -44,6 +44,10 @@ Dagger. ([Documentation](https://dagger.dev/hilt/)) <br />
 architecture where the Repository manages data sources (e.g., network, database), the ViewModel
 processes the data for the UI, and the View displays the UI, ensuring a clear separation of
 concerns. <br />
+[Navigation 3](https://developer.android.com/guide/navigation/navigation-3) for Jetpack Compose is a
+modern, Compose-native navigation system where you manage a
+stack of serializable destination keys and display them with NavDisplay, giving you direct control,
+state retention, and flexible adaptive UI without traditional graphs or routes. <br />
 [R8](https://developer.android.com/build/shrink-code) enabled, is a code shrinker and obfuscator for
 Android that optimizes and reduces the size of APKs by removing unused code and resources, while
 also obfuscating the remaining code to improve security. <br />
@@ -79,17 +83,17 @@ also obfuscating the remaining code to improve security. <br />
 
 Target SDK version: 36 <br />
 Minimum SDK version: 29 <br />
-Kotlin version: 2.2.10 <br />
-Gradle version: 8.12.0 <br />
+Kotlin version: 2.3.0 <br />
+Gradle version: 8.13.2 <br />
 
 # Feeds/Urls/End Point (parsing some data from response)
 
 ## (Links References for Ends Points)
 
-https://github.com/r-spacex/SpaceX-API (GitHub) <br />
-https://docs.spacexdata.com/?version=latest (Postman) <br />
+- https://github.com/r-spacex/SpaceX-API (GitHub) <br />
+- https://docs.spacexdata.com/?version=latest (Postman) <br />
 
 # References
 
-https://medium.com/flutter-community/flutter-building-wearos-app-fedf0f06d1b4 <br />
-https://developer.android.com/training/wearables/compose <br />
+- https://medium.com/flutter-community/flutter-building-wearos-app-fedf0f06d1b4 <br />
+- https://developer.android.com/training/wearables/compose <br />
