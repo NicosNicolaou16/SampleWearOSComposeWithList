@@ -69,15 +69,15 @@ android {
 
 val coroutineVersion by extra("1.10.2")
 val composeHiltNavigationVersion by extra("1.3.0")
-val hiltVersion by extra("2.57")
+val hiltVersion by extra("2.57.2")
 val hiltCompilerVersion by extra("1.3.0")
 val retrofitVersion by extra("3.0.0")
-val roomVersion by extra("2.7.2")
+val roomVersion by extra("2.8.4")
 val glideVersion by extra("4.16.0")
 val glideComposeVersion by extra("1.0.0-beta01")
 val materialDesignVersion by extra("1.12.0")
 val multidexVersion by extra("2.0.1")
-val wearComposeVersion by extra("1.4.1")
+val wearComposeVersion by extra("1.5.6")
 val activityComposeVersion by extra("1.12.2")
 
 dependencies {
