@@ -67,6 +67,7 @@ android {
     }
 }
 
+val lifeCycleAndLiveDataCompilerAndViewModelKTXVersion by extra("2.10.0")
 val coroutineVersion by extra("1.10.2")
 val composeHiltNavigationVersion by extra("1.3.0")
 val hiltVersion by extra("2.57.2")
@@ -79,6 +80,9 @@ val materialDesignVersion by extra("1.13.0")
 val multidexVersion by extra("2.0.1")
 val wearComposeVersion by extra("1.5.6")
 val activityComposeVersion by extra("1.12.2")
+val navigation3Version by extra("1.0.0")
+val composeMaterial3AdaptiveVersion by extra("1.3.0-alpha05")
+val kotlinSerializationVersion by extra("1.9.0")
 
 dependencies {
 
@@ -96,6 +100,13 @@ dependencies {
     implementation("androidx.wear.compose:compose-ui-tooling:$wearComposeVersion")
     implementation("androidx.wear.compose:compose-navigation:$wearComposeVersion")
     implementation("androidx.hilt:hilt-navigation-compose:$composeHiltNavigationVersion")
+    // Navigation 3
+    implementation("androidx.navigation3:navigation3-runtime:${navigation3Version}")
+    implementation("androidx.navigation3:navigation3-ui:${navigation3Version}")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-navigation3:${lifeCycleAndLiveDataCompilerAndViewModelKTXVersion}")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:${kotlinSerializationVersion}")
+    implementation("androidx.compose.material3.adaptive:adaptive:${composeMaterial3AdaptiveVersion}")
+    implementation("androidx.compose.material3.adaptive:adaptive-navigation3:${composeMaterial3AdaptiveVersion}")
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutineVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion")
