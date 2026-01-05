@@ -68,9 +68,9 @@ android {
 }
 
 val coroutineVersion by extra("1.10.2")
-val composeHiltNavigationVersion by extra("1.2.0")
+val composeHiltNavigationVersion by extra("1.3.0")
 val hiltVersion by extra("2.57")
-val hiltCompilerVersion by extra("1.2.0")
+val hiltCompilerVersion by extra("1.3.0")
 val retrofitVersion by extra("3.0.0")
 val roomVersion by extra("2.7.2")
 val glideVersion by extra("4.16.0")
@@ -83,7 +83,7 @@ val activityComposeVersion by extra("1.12.2")
 dependencies {
 
     implementation("androidx.core:core-ktx:1.17.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.2")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.10.0")
     //Compose
     implementation("androidx.activity:activity-compose:$activityComposeVersion")
     implementation(platform("androidx.compose:compose-bom:2025.12.01"))
