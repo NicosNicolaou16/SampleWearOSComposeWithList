@@ -69,7 +69,7 @@ android {
 val lifeCycleAndLiveDataCompilerAndViewModelKTXVersion by extra("2.10.0")
 val coroutineVersion by extra("1.10.2")
 val composeHiltNavigationVersion by extra("1.3.0")
-val hiltVersion by extra("2.57.2")
+val hiltVersion by extra("2.59.2")
 val hiltCompilerVersion by extra("1.3.0")
 val retrofitVersion by extra("3.0.0")
 val roomVersion by extra("2.8.4")
