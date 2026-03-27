@@ -85,7 +85,7 @@ val kotlinSerializationVersion by extra("1.9.0")
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.17.0")
+    implementation("androidx.core:core-ktx:1.18.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.10.0")
     // Compose
     implementation("androidx.activity:activity-compose:$activityComposeVersion")
