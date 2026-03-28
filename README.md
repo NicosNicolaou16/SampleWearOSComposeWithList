@@ -149,23 +149,3 @@ This project is a test implementation for educational purposes.
 Feedback, bug reports, and pull requests are always welcome!
 
 If you find this project helpful, please consider giving it a ⭐!
-
-
-# Versioning
-
-Target SDK version: 36 <br />
-Minimum SDK version: 29 <br />
-Kotlin version: 2.3.20 <br />
-Gradle version: 9.1.0 <br />
-
-# Feeds/Urls/End Point (parsing some data from response)
-
-## (Links References for Ends Points)
-
-- https://github.com/r-spacex/SpaceX-API (GitHub) <br />
-- https://docs.spacexdata.com/?version=latest (Postman) <br />
-
-# References
-
-- https://medium.com/flutter-community/flutter-building-wearos-app-fedf0f06d1b4 <br />
-- https://developer.android.com/training/wearables/compose <br />
