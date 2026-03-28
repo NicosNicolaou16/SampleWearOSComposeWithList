@@ -2,10 +2,9 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp")
     id("dagger.hilt.android.plugin")
-    id("org.jetbrains.kotlin.plugin.compose") version "2.3.0"
+    id("org.jetbrains.kotlin.plugin.compose") version "2.3.20"
 }
 
 android {
@@ -48,17 +47,8 @@ android {
         sourceCompatibility = JavaVersion.VERSION_21
         targetCompatibility = JavaVersion.VERSION_21
     }
-    kotlin {
-        compilerOptions {
-            jvmTarget = JvmTarget.fromTarget("21")
-            freeCompilerArgs = listOf("-Xannotation-default-target=param-property")
-        }
-    }
     buildFeatures {
         compose = true
-    }
-    composeCompiler {
-        reportsDestination = layout.buildDirectory.dir("compose_compiler")
     }
     packaging {
         resources {
@@ -66,11 +56,21 @@ android {
         }
     }
 }
+kotlin {
+    compilerOptions {
+        languageVersion = org.jetbrains.kotlin.gradle.dsl.KotlinVersion.KOTLIN_2_3
+        jvmTarget = JvmTarget.fromTarget("21")
+        freeCompilerArgs = listOf("-Xannotation-default-target=param-property")
+    }
+}
+composeCompiler {
+    reportsDestination = layout.buildDirectory.dir("compose_compiler")
+}
 
 val lifeCycleAndLiveDataCompilerAndViewModelKTXVersion by extra("2.10.0")
 val coroutineVersion by extra("1.10.2")
 val composeHiltNavigationVersion by extra("1.3.0")
-val hiltVersion by extra("2.57.2")
+val hiltVersion by extra("2.59.2")
 val hiltCompilerVersion by extra("1.3.0")
 val retrofitVersion by extra("3.0.0")
 val roomVersion by extra("2.8.4")
@@ -78,19 +78,19 @@ val glideVersion by extra("5.0.5")
 val glideComposeVersion by extra("1.0.0-beta08")
 val materialDesignVersion by extra("1.13.0")
 val multidexVersion by extra("2.0.1")
-val wearComposeVersion by extra("1.6.0-alpha07")
-val activityComposeVersion by extra("1.12.2")
+val wearComposeVersion by extra("1.6.0")
+val activityComposeVersion by extra("1.13.0")
 val navigation3Version by extra("1.0.0")
 val composeMaterial3AdaptiveVersion by extra("1.3.0-alpha05")
 val kotlinSerializationVersion by extra("1.9.0")
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.17.0")
+    implementation("androidx.core:core-ktx:1.18.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.10.0")
     // Compose
     implementation("androidx.activity:activity-compose:$activityComposeVersion")
-    implementation(platform("androidx.compose:compose-bom:2025.12.01"))
+    implementation(platform("androidx.compose:compose-bom:2026.03.01"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
@@ -98,7 +98,7 @@ dependencies {
     implementation("androidx.wear.compose:compose-material:$wearComposeVersion")
     implementation("androidx.wear.compose:compose-foundation:$wearComposeVersion")
     implementation("androidx.wear.compose:compose-ui-tooling:$wearComposeVersion")
-    implementation("wear-compose:compose-navigation3:$wearComposeVersion")
+    implementation("androidx.wear.compose:compose-navigation3:$wearComposeVersion")
     implementation("androidx.hilt:hilt-navigation-compose:$composeHiltNavigationVersion")
     // Navigation 3
     implementation("androidx.navigation3:navigation3-runtime:${navigation3Version}")
@@ -134,7 +134,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.3.0")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")
-    androidTestImplementation(platform("androidx.compose:compose-bom:2025.12.01"))
+    androidTestImplementation(platform("androidx.compose:compose-bom:2026.03.01"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
