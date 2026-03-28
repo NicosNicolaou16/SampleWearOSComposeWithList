@@ -36,6 +36,8 @@ A modern test implementation for **Wear OS** using **Jetpack Compose**. This pro
 *   **[Retrofit & Room](https://developer.android.com/training/data-storage/room):** Remote API data fetching with SpaceX API and local caching for offline support.
 *   **[MVVM Architecture](https://developer.android.com/topic/architecture):** Clean separation of concerns with Repositories and ViewModels.
 *   **[Glide for Compose](https://bumptech.github.io/glide/int/compose.html):** Efficient image loading and caching.
+*   **[KSP](https://developer.android.com/build/migrate-to-ksp):** Faster annotation processing for build optimization.
+*   **[R8 Optimization](https://developer.android.com/build/shrink-code):** Enabled for code shrinking, obfuscation, and APK size reduction.
 
 ## 🛠️ Setup
 
