@@ -123,6 +123,34 @@ also obfuscating the remaining code to improve security. <br />
 > [!IMPORTANT]
 > Similar project with (Dart Language) :point_right: [SampleWearOSWithList](https://github.com/NicosNicolaou16/SampleWearOSWithList) :point_left: <br />
 
+
+## 🔧 Versioning
+
+- **Target SDK:** **36**
+- **Minimum SDK:** **29**
+- **Kotlin Version:** **2.3.20**
+- **Gradle Version:** **9.1.0**
+
+## 📡 API Reference
+
+This project fetches and parses data from:
+- **Source:** [SpaceX-API (GitHub)](https://github.com/r-spacex/SpaceX-API)
+- **Documentation:** [Postman Docs](https://docs.spacexdata.com/?version=latest)
+
+## 📚 Resources
+
+- [Official Wear OS Compose Samples](https://github.com/android/wear-os-samples)
+- [Compose for Wear OS Codelab](https://developer.android.com/codelabs/compose-for-wear-os)
+- [Shared Element Transitions in Compose](https://fvilarino.medium.com/shared-element-transitions-in-jetpack-compose-8f553078101e)
+
+## 🙏 Support & Contributions
+
+This project is a test implementation for educational purposes.
+Feedback, bug reports, and pull requests are always welcome!
+
+If you find this project helpful, please consider giving it a ⭐!
+
+
 # Versioning
 
 Target SDK version: 36 <br />
