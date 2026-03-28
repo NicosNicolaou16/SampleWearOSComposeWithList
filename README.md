@@ -143,9 +143,11 @@ This project fetches and parses data from:
 - [Compose for Wear OS Codelab](https://developer.android.com/codelabs/compose-for-wear-os)
 - [Shared Element Transitions in Compose](https://fvilarino.medium.com/shared-element-transitions-in-jetpack-compose-8f553078101e)
 
+## ⭐ Stargazers
+
+If you find this project useful, please give it a star!
+[View Stargazers on GitHub](https://github.com/NicosNicolaou16/SampleWearOSComposeWithList/stargazers)
+
 ## 🙏 Support & Contributions
 
-This project is a test implementation for educational purposes.
-Feedback, bug reports, and pull requests are always welcome!
-
-If you find this project helpful, please consider giving it a ⭐!
+This project is a test implementation. Feedback, bug reports, and feature requests are welcome! Please feel free to **open an issue** or submit a **pull request**.
